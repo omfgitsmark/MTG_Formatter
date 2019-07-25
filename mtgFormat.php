@@ -22,7 +22,6 @@ function mtgFormat($str, $size = 12) {
 	}
 	$returnstr .= substr($str, $curpos); 
 	$returnstr = preg_replace('/\((.+?)\)/','<span style="font-style:italic;">($1)</span>',$returnstr);
-	// highlight keywords
 	$returnstr = str_replace("\n","<br><br>", $returnstr); // Formerly "nl2br()" but 2 line-breaks looks a little nicer
 	return $returnstr;
 }
