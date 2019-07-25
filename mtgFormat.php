@@ -18,7 +18,9 @@ function mtgFormat($str, $size = 12) {
 	for ($i = 0; $i < count($matches[0]); $i++) {
 		$returnstr .= substr($str, $curpos, $matches[0][$i][1] - $curpos);
 		$curpos = intval($matches[0][$i][1]) + strlen($matches[0][$i][0]);
-		$returnstr .= '<img src="../images/symbols/' . str_replace("/", "", $matches[1][$i][0]) . '.svg" class="symbol" style="width:' . $size . 'px;height:' . $size . 'px;" title="' . $titletxt[$matches[1][$i][0]] . '">';
+		$returnstr .= '<img src="../images/symbols/' . str_replace("/", "", $matches[1][$i][0]) . 
+			      '.svg" class="symbol" style="width:' . $size . 'px;height:' . $size . 'px;" title="' . 
+			      $titletxt[$matches[1][$i][0]] . '">';
 	}
 	$returnstr .= substr($str, $curpos); 
 	$returnstr = preg_replace('/\((.+?)\)/','<span style="font-style:italic;">($1)</span>',$returnstr);
