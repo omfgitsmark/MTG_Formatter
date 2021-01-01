@@ -2,14 +2,14 @@
 
 function mtgFormat($str, $size = 12) {
 	$titletxt = ['T'=>'Tap', 'C'=>'Colorless', 'W'=>'White', 'G'=>'Green', 'R'=>'Red', 'U'=>'Blue', 'B'=>'Black', '0'=>'Zero', 
-		     '1'=>'One Colorless', '2'=>'Two Colorless', '3'=>'Three Colorless', '4'=>'Four Colorless', '5'=>'Five Colorless', 
-		     '6'=>'Six Colorless', '7'=>'Seven Colorless', '8'=>'Eight Colorless', '9'=>'Nine Colorless', '10'=>'Ten Colorless', 
-		     '11'=>'Eleven Colorless', '12'=>'Twelve Colorless', '13'=>'Thirteen Colorless', '14'=>'Fourteen Colorless', 
-		     '15'=>'Fifteen Colorless', '16'=>'Sixteen Colorless', '17'=>'Seventeen Colorless', '18'=>'Eighteen Colorless', 
-		     '19'=>'Nineteen Colorless', '20'=>'Twenty Colorless', 'W/U'=>'White/Blue', 'W/B'=>'White/Black', 'U/R'=>'Blue/Red', 
+		     '1'=>'One Generic', '2'=>'Two Generic', '3'=>'Three Generic', '4'=>'Four Generic', '5'=>'Five Generic', 
+		     '6'=>'Six Generic', '7'=>'Seven Generic', '8'=>'Eight Generic', '9'=>'Nine Generic', '10'=>'Ten Generic', 
+		     '11'=>'Eleven Generic', '12'=>'Twelve Generic', '13'=>'Thirteen Generic', '14'=>'Fourteen Generic', 
+		     '15'=>'Fifteen Generic', '16'=>'Sixteen Generic', '17'=>'Seventeen Generic', '18'=>'Eighteen Generic', 
+		     '19'=>'Nineteen Generic', '20'=>'Twenty Generic', 'W/U'=>'White/Blue', 'W/B'=>'White/Black', 'U/R'=>'Blue/Red', 
 		     'U/B'=>'Blue/Black', 'R/W'=>'Red/White', 'R/G'=>'Red/Green', 'G/W'=>'Green/White', 'G/U'=>'Green/Blue', 
-		     'B/R'=>'Black/Red', 'B/G'=>'Black/Green', 'T'=>'Tap', '2B'=>'2 Colorless or 1 Black', '2G'=>'2 Colorless or 1 Green', 
-		     '2R'=>'2 Colorless or 1 Red', '2U'=>'2 Colorless or 1 Blue', '2W'=>'2 Colorless or 1 White', 'BP'=>'Black/Phyrexian', 
+		     'B/R'=>'Black/Red', 'B/G'=>'Black/Green', 'T'=>'Tap', '2B'=>'2 Generic or 1 Black', '2G'=>'2 Generic or 1 Green', 
+		     '2R'=>'2 Generic or 1 Red', '2U'=>'2 Generic or 1 Blue', '2W'=>'2 Generic or 1 White', 'BP'=>'Black/Phyrexian', 
 		     'GP'=>'Green/Phyrexian', 'RP'=>'Red/Phyrexian', 'UP'=>'Blue/Phyrexian', 'WP'=>'White/Phyrexian', 'S'=>'Snow-Covered', 
 		     'X'=>'X', 'Y'=>'Y', 'Z'=>'Z'];
 	preg_match_all("/\{(.+?)\}/", $str, $matches, PREG_OFFSET_CAPTURE);
